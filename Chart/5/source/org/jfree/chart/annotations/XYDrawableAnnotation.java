@@ -202,19 +202,19 @@ public class XYDrawableAnnotation extends AbstractXYAnnotation
             return false;
         }
         XYDrawableAnnotation that = (XYDrawableAnnotation) obj;
-        if (this.x != that.x) {
+        if (Double.compare(this.x, that.x) != 0) {
             return false;
         }
-        if (this.y != that.y) {
+        if (Double.compare(this.y, that.y) != 0) {
             return false;
         }
-        if (this.displayWidth != that.displayWidth) {
+        if (Double.compare(this.displayWidth, that.displayWidth) != 0) {
             return false;
         }
-        if (this.displayHeight != that.displayHeight) {
+        if (Double.compare(this.displayHeight, that.displayHeight) != 0) {
             return false;
         }
-        if (this.drawScaleFactor != that.drawScaleFactor) {
+        if (Double.compare(this.drawScaleFactor, that.drawScaleFactor) != 0) {
             return false;
         }
         if (!ObjectUtilities.equal(this.drawable, that.drawable)) {

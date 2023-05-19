@@ -333,16 +333,16 @@ public class AxisSpace implements Cloneable, PublicCloneable, Serializable {
             return false;
         }
         AxisSpace that = (AxisSpace) obj;
-        if (this.top != that.top) {
+        if (Double.compare(this.top, that.top) != 0) {
             return false;
         }
-        if (this.bottom != that.bottom) {
+        if (Double.compare(this.bottom, that.bottom) != 0) {
             return false;
         }
-        if (this.left != that.left) {
+        if (Double.compare(this.left, that.left) != 0) {
             return false;
         }
-        if (this.right != that.right) {
+        if (Double.compare(this.right, that.right) != 0) {
             return false;
         }
         return true;

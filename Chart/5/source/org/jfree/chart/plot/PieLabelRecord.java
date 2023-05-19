@@ -222,10 +222,10 @@ public class PieLabelRecord implements Comparable, Serializable {
         int result = 0;
         if (obj instanceof PieLabelRecord) {
             PieLabelRecord plr = (PieLabelRecord) obj;
-            if (this.baseY < plr.baseY) {
+            if (Double.compare(this.baseY, plr.baseY) < 0) {
                 result = -1;
             }
-            else if (this.baseY > plr.baseY) {
+            else if (Double.compare(this.baseY, plr.baseY) > 0) {
                 result = 1;
             }
         }
@@ -250,22 +250,22 @@ public class PieLabelRecord implements Comparable, Serializable {
         if (!this.key.equals(that.key)) {
             return false;
         }
-        if (this.angle != that.angle) {
+        if (Double.compare(this.angle, that.angle) != 0) {
             return false;
         }
-        if (this.gap != that.gap) {
+        if (Double.compare(this.gap, that.gap) != 0) {
             return false;
         }
-        if (this.allocatedY != that.allocatedY) {
+        if (Double.compare(this.allocatedY, that.allocatedY) != 0) {
             return false;
         }
-        if (this.baseY != that.baseY) {
+        if (Double.compare(this.baseY, that.baseY) != 0) {
             return false;
         }
-        if (this.labelHeight != that.labelHeight) {
+        if (Double.compare(this.labelHeight, that.labelHeight) != 0) {
             return false;
         }
-        if (this.linkPercent != that.linkPercent) {
+        if (Double.compare(this.linkPercent, that.linkPercent) != 0) {
             return false;
         }
         if (!this.label.equals(that.label)) {

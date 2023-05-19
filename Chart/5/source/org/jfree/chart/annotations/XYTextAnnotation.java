@@ -416,10 +416,10 @@ public class XYTextAnnotation extends AbstractXYAnnotation
         if (!this.text.equals(that.text)) {
             return false;
         }
-        if (this.x != that.x) {
+        if (Double.compare(this.x, that.x) != 0) {
             return false;
         }
-        if (this.y != that.y) {
+        if (Double.compare(this.y, that.y) != 0) {
             return false;
         }
         if (!this.font.equals(that.font)) {
@@ -431,7 +431,7 @@ public class XYTextAnnotation extends AbstractXYAnnotation
         if (!this.rotationAnchor.equals(that.rotationAnchor)) {
             return false;
         }
-        if (this.rotationAngle != that.rotationAngle) {
+        if (Double.compare(this.rotationAngle, that.rotationAngle) != 0) {
             return false;
         }
         if (!this.textAnchor.equals(that.textAnchor)) {

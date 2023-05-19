@@ -229,16 +229,16 @@ public class XYLineAnnotation extends AbstractXYAnnotation
             return false;
         }
         XYLineAnnotation that = (XYLineAnnotation) obj;
-        if (this.x1 != that.x1) {
+        if (Double.compare(this.x1, that.x1) != 0) {
             return false;
         }
-        if (this.y1 != that.y1) {
+        if (Double.compare(this.y1, that.y1) != 0) {
             return false;
         }
-        if (this.x2 != that.x2) {
+        if (Double.compare(this.x2, that.x2) != 0) {
             return false;
         }
-        if (this.y2 != that.y2) {
+        if (Double.compare(this.y2, that.y2) != 0) {
             return false;
         }
         if (!PaintUtilities.equal(this.paint, that.paint)) {

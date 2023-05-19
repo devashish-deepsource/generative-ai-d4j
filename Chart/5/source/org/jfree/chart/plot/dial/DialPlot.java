@@ -759,16 +759,16 @@ public class DialPlot extends Plot implements DialLayerChangeListener {
         if (!this.dialFrame.equals(that.dialFrame)) {
             return false;
         }
-        if (this.viewX != that.viewX) {
+        if (Double.compare(this.viewX, that.viewX) != 0) {
             return false;
         }
-        if (this.viewY != that.viewY) {
+        if (Double.compare(this.viewY, that.viewY) != 0) {
             return false;
         }
-        if (this.viewW != that.viewW) {
+        if (Double.compare(this.viewW, that.viewW) != 0) {
             return false;
         }
-        if (this.viewH != that.viewH) {
+        if (Double.compare(this.viewH, that.viewH) != 0) {
             return false;
         }
         if (!this.layers.equals(that.layers)) {

@@ -575,10 +575,10 @@ public class AbstractBlock implements Cloneable, Serializable {
         if (!this.padding.equals(that.padding)) {
             return false;
         }
-        if (this.height != that.height) {
+        if (Double.compare(this.height, that.height) != 0) {
             return false;
         }
-        if (this.width != that.width) {
+        if (Double.compare(this.width, that.width) != 0) {
             return false;
         }
         return true;

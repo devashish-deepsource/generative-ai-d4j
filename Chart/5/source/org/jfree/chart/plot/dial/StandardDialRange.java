@@ -359,19 +359,19 @@ public class StandardDialRange extends AbstractDialLayer implements DialLayer,
         if (this.scaleIndex != that.scaleIndex) {
             return false;
         }
-        if (this.lowerBound != that.lowerBound) {
+        if (Double.compare(this.lowerBound, that.lowerBound) != 0) {
             return false;
         }
-        if (this.upperBound != that.upperBound) {
+        if (Double.compare(this.upperBound, that.upperBound) != 0) {
             return false;
         }
         if (!PaintUtilities.equal(this.paint, that.paint)) {
             return false;
         }
-        if (this.innerRadius != that.innerRadius) {
+        if (Double.compare(this.innerRadius, that.innerRadius) != 0) {
             return false;
         }
-        if (this.outerRadius != that.outerRadius) {
+        if (Double.compare(this.outerRadius, that.outerRadius) != 0) {
             return false;
         }
         return super.equals(obj);

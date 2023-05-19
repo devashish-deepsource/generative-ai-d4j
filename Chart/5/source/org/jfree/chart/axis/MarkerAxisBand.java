@@ -239,16 +239,16 @@ public class MarkerAxisBand implements Serializable {
             return false;
         }
         MarkerAxisBand that = (MarkerAxisBand) obj;
-        if (this.topOuterGap != that.topOuterGap) {
+        if (Double.compare(this.topOuterGap, that.topOuterGap) != 0) {
             return false;
         }
-        if (this.topInnerGap != that.topInnerGap) {
+        if (Double.compare(this.topInnerGap, that.topInnerGap) != 0) {
             return false;
         }
-        if (this.bottomInnerGap != that.bottomInnerGap) {
+        if (Double.compare(this.bottomInnerGap, that.bottomInnerGap) != 0) {
             return false;
         }
-        if (this.bottomOuterGap != that.bottomOuterGap) {
+        if (Double.compare(this.bottomOuterGap, that.bottomOuterGap) != 0) {
             return false;
         }
         if (!ObjectUtilities.equal(this.font, that.font)) {

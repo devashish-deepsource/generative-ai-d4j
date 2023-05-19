@@ -205,10 +205,10 @@ public class IntervalMarker extends Marker implements Cloneable, Serializable {
             return false;
         }
         IntervalMarker that = (IntervalMarker) obj;
-        if (this.startValue != that.startValue) {
+        if (Double.compare(this.startValue, that.startValue) != 0) {
             return false;
         }
-        if (this.endValue != that.endValue) {
+        if (Double.compare(this.endValue, that.endValue) != 0) {
             return false;
         }
         if (!ObjectUtilities.equal(this.gradientPaintTransformer,

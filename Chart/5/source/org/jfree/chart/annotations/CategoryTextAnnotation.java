@@ -248,7 +248,7 @@ public class CategoryTextAnnotation extends TextAnnotation
         if (!this.categoryAnchor.equals(that.getCategoryAnchor())) {
             return false;
         }
-        if (this.value != that.getValue()) {
+        if (Double.compare(this.value, that.getValue()) != 0) {
             return false;
         }
         return true;

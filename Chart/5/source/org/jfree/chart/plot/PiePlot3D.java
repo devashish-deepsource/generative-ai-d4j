@@ -1019,7 +1019,7 @@ public class PiePlot3D extends PiePlot implements Serializable {
             return false;
         }
         PiePlot3D that = (PiePlot3D) obj;
-        if (this.depthFactor != that.depthFactor) {
+        if (Double.compare(this.depthFactor, that.depthFactor) != 0) {
             return false;
         }
         if (this.darkerSides != that.darkerSides) {

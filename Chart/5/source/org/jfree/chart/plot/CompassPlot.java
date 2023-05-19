@@ -784,7 +784,7 @@ public class CompassPlot extends Plot implements Cloneable, Serializable {
         if (!Arrays.equals(this.seriesNeedle, that.seriesNeedle)) {
             return false;
         }
-        if (getRevolutionDistance() != that.getRevolutionDistance()) {
+        if (Double.compare(getRevolutionDistance(), that.getRevolutionDistance()) != 0) {
             return false;
         }
         return true;

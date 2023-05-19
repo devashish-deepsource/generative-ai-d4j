@@ -1429,7 +1429,7 @@ public abstract class Axis implements Cloneable, Serializable {
         if (!ObjectUtilities.equal(this.labelInsets, that.labelInsets)) {
             return false;
         }
-        if (this.labelAngle != that.labelAngle) {
+        if (Double.compare(this.labelAngle, that.labelAngle) != 0) {
             return false;
         }
         if (!ObjectUtilities.equal(this.labelToolTip, that.labelToolTip)) {
@@ -1464,10 +1464,10 @@ public abstract class Axis implements Cloneable, Serializable {
         if (this.tickMarksVisible != that.tickMarksVisible) {
             return false;
         }
-        if (this.tickMarkInsideLength != that.tickMarkInsideLength) {
+        if (Double.compare(this.tickMarkInsideLength, that.tickMarkInsideLength) != 0) {
             return false;
         }
-        if (this.tickMarkOutsideLength != that.tickMarkOutsideLength) {
+        if (Double.compare(this.tickMarkOutsideLength, that.tickMarkOutsideLength) != 0) {
             return false;
         }
         if (!PaintUtilities.equal(this.tickMarkPaint, that.tickMarkPaint)) {
@@ -1479,13 +1479,13 @@ public abstract class Axis implements Cloneable, Serializable {
         if (this.minorTickMarksVisible != that.minorTickMarksVisible) {
             return false;
         }
-        if (this.minorTickMarkInsideLength != that.minorTickMarkInsideLength) {
+        if (Double.compare(this.minorTickMarkInsideLength, that.minorTickMarkInsideLength) != 0) {
             return false;
         }
-        if (this.minorTickMarkOutsideLength != that.minorTickMarkOutsideLength) {
+        if (Double.compare(this.minorTickMarkOutsideLength, that.minorTickMarkOutsideLength) != 0) {
             return false;
         }
-        if (this.fixedDimension != that.fixedDimension) {
+        if (Double.compare(this.fixedDimension, that.fixedDimension) != 0) {
             return false;
         }
         return true;

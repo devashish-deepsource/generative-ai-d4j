@@ -1246,7 +1246,7 @@ public class MeterPlot extends Plot implements Serializable, Cloneable {
         if (!PaintUtilities.equal(this.tickPaint, that.tickPaint)) {
             return false;
         }
-        if (this.tickSize != that.tickSize) {
+        if (Double.compare(this.tickSize, that.tickSize) != 0) {
             return false;
         }
         if (this.tickLabelsVisible != that.tickLabelsVisible) {

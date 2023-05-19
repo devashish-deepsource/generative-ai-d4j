@@ -254,10 +254,10 @@ public class XYImageAnnotation extends AbstractXYAnnotation
             return false;
         }
         XYImageAnnotation that = (XYImageAnnotation) obj;
-        if (this.x != that.x) {
+        if (Double.compare(this.x, that.x) != 0) {
             return false;
         }
-        if (this.y != that.y) {
+        if (Double.compare(this.y, that.y) != 0) {
             return false;
         }
         if (!ObjectUtilities.equal(this.image, that.image)) {

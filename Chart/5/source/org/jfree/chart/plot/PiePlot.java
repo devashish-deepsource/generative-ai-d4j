@@ -3086,13 +3086,13 @@ public class PiePlot extends Plot implements Cloneable, Serializable {
         if (this.pieIndex != that.pieIndex) {
             return false;
         }
-        if (this.interiorGap != that.interiorGap) {
+        if (Double.compare(this.interiorGap, that.interiorGap) != 0) {
             return false;
         }
         if (this.circular != that.circular) {
             return false;
         }
-        if (this.startAngle != that.startAngle) {
+        if (Double.compare(this.startAngle, that.startAngle) != 0) {
             return false;
         }
         if (this.direction != that.direction) {
@@ -3136,10 +3136,10 @@ public class PiePlot extends Plot implements Cloneable, Serializable {
         if (!PaintUtilities.equal(this.shadowPaint, that.shadowPaint)) {
             return false;
         }
-        if (!(this.shadowXOffset == that.shadowXOffset)) {
+        if (!(Double.compare(this.shadowXOffset, that.shadowXOffset) == 0)) {
             return false;
         }
-        if (!(this.shadowYOffset == that.shadowYOffset)) {
+        if (!(Double.compare(this.shadowYOffset, that.shadowYOffset) == 0)) {
             return false;
         }
         if (!ObjectUtilities.equal(this.explodePercentages,
@@ -3181,13 +3181,13 @@ public class PiePlot extends Plot implements Cloneable, Serializable {
         if (!this.labelPadding.equals(that.labelPadding)) {
             return false;
         }
-        if (!(this.maximumLabelWidth == that.maximumLabelWidth)) {
+        if (!(Double.compare(this.maximumLabelWidth, that.maximumLabelWidth) == 0)) {
             return false;
         }
-        if (!(this.labelGap == that.labelGap)) {
+        if (!(Double.compare(this.labelGap, that.labelGap) == 0)) {
             return false;
         }
-        if (!(this.labelLinkMargin == that.labelLinkMargin)) {
+        if (!(Double.compare(this.labelLinkMargin, that.labelLinkMargin) == 0)) {
             return false;
         }
         if (this.labelLinksVisible != that.labelLinksVisible) {
@@ -3210,7 +3210,7 @@ public class PiePlot extends Plot implements Cloneable, Serializable {
         if (!ObjectUtilities.equal(this.urlGenerator, that.urlGenerator)) {
             return false;
         }
-        if (!(this.minimumArcAngleToDraw == that.minimumArcAngleToDraw)) {
+        if (!(Double.compare(this.minimumArcAngleToDraw, that.minimumArcAngleToDraw) == 0)) {
             return false;
         }
         if (!ShapeUtilities.equal(this.legendItemShape, that.legendItemShape)) {

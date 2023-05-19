@@ -434,16 +434,16 @@ public class ArcDialFrame extends AbstractDialLayer implements DialFrame,
         if (!PaintUtilities.equal(this.foregroundPaint, that.foregroundPaint)) {
             return false;
         }
-        if (this.startAngle != that.startAngle) {
+        if (Double.compare(this.startAngle, that.startAngle) != 0) {
             return false;
         }
-        if (this.extent != that.extent) {
+        if (Double.compare(this.extent, that.extent) != 0) {
             return false;
         }
-        if (this.innerRadius != that.innerRadius) {
+        if (Double.compare(this.innerRadius, that.innerRadius) != 0) {
             return false;
         }
-        if (this.outerRadius != that.outerRadius) {
+        if (Double.compare(this.outerRadius, that.outerRadius) != 0) {
             return false;
         }
         if (!this.stroke.equals(that.stroke)) {
