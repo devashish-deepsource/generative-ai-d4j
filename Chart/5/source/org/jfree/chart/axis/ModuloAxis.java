@@ -417,10 +417,10 @@ public class ModuloAxis extends NumberAxis {
             return false;
         }
         ModuloAxis that = (ModuloAxis) obj;
-        if (this.displayStart != that.displayStart) {
+        if (Double.compare(this.displayStart, that.displayStart) != 0) {
             return false;
         }
-        if (this.displayEnd != that.displayEnd) {
+        if (Double.compare(this.displayEnd, that.displayEnd) != 0) {
             return false;
         }
         if (!this.fixedRange.equals(that.fixedRange)) {

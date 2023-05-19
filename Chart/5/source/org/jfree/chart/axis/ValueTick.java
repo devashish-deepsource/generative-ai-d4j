@@ -136,7 +136,7 @@ public abstract class ValueTick extends Tick {
             return false;
         }
         ValueTick that = (ValueTick) obj;
-        if (this.value != that.value) {
+        if (Double.compare(this.value, that.value) != 0) {
             return false;
         }
         if (!this.tickType.equals(that.tickType)) {

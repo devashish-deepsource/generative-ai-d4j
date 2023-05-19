@@ -879,25 +879,25 @@ public class StandardDialScale extends AbstractDialLayer implements DialScale,
             return false;
         }
         StandardDialScale that = (StandardDialScale) obj;
-        if (this.lowerBound != that.lowerBound) {
+        if (Double.compare(this.lowerBound, that.lowerBound) != 0) {
             return false;
         }
-        if (this.upperBound != that.upperBound) {
+        if (Double.compare(this.upperBound, that.upperBound) != 0) {
             return false;
         }
-        if (this.startAngle != that.startAngle) {
+        if (Double.compare(this.startAngle, that.startAngle) != 0) {
             return false;
         }
-        if (this.extent != that.extent) {
+        if (Double.compare(this.extent, that.extent) != 0) {
             return false;
         }
-        if (this.tickRadius != that.tickRadius) {
+        if (Double.compare(this.tickRadius, that.tickRadius) != 0) {
             return false;
         }
-        if (this.majorTickIncrement != that.majorTickIncrement) {
+        if (Double.compare(this.majorTickIncrement, that.majorTickIncrement) != 0) {
             return false;
         }
-        if (this.majorTickLength != that.majorTickLength) {
+        if (Double.compare(this.majorTickLength, that.majorTickLength) != 0) {
             return false;
         }
         if (!PaintUtilities.equal(this.majorTickPaint, that.majorTickPaint)) {
@@ -909,7 +909,7 @@ public class StandardDialScale extends AbstractDialLayer implements DialScale,
         if (this.minorTickCount != that.minorTickCount) {
             return false;
         }
-        if (this.minorTickLength != that.minorTickLength) {
+        if (Double.compare(this.minorTickLength, that.minorTickLength) != 0) {
             return false;
         }
         if (!PaintUtilities.equal(this.minorTickPaint, that.minorTickPaint)) {
@@ -921,7 +921,7 @@ public class StandardDialScale extends AbstractDialLayer implements DialScale,
         if (this.tickLabelsVisible != that.tickLabelsVisible) {
             return false;
         }
-        if (this.tickLabelOffset != that.tickLabelOffset) {
+        if (Double.compare(this.tickLabelOffset, that.tickLabelOffset) != 0) {
             return false;
         }
         if (!this.tickLabelFont.equals(that.tickLabelFont)) {

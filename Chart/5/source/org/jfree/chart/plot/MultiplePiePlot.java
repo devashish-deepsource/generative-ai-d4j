@@ -569,7 +569,7 @@ public class MultiplePiePlot extends Plot implements Cloneable, Serializable {
         if (this.dataExtractOrder != that.dataExtractOrder) {
             return false;
         }
-        if (this.limit != that.limit) {
+        if (Double.compare(this.limit, that.limit) != 0) {
             return false;
         }
         if (!this.aggregatedItemsKey.equals(that.aggregatedItemsKey)) {

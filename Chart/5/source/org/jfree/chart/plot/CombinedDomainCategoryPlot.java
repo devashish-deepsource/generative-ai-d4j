@@ -641,7 +641,7 @@ public class CombinedDomainCategoryPlot extends CategoryPlot
             return false;
         }
         CombinedDomainCategoryPlot that = (CombinedDomainCategoryPlot) obj;
-        if (this.gap != that.gap) {
+        if (Double.compare(this.gap, that.gap) != 0) {
             return false;
         }
         if (!ObjectUtilities.equal(this.subplots, that.subplots)) {

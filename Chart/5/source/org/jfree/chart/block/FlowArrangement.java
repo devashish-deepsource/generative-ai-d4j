@@ -436,10 +436,10 @@ public class FlowArrangement implements Arrangement, Serializable {
         if (this.verticalAlignment != that.verticalAlignment) {
             return false;
         }
-        if (this.horizontalGap != that.horizontalGap) {
+        if (Double.compare(this.horizontalGap, that.horizontalGap) != 0) {
             return false;
         }
-        if (this.verticalGap != that.verticalGap) {
+        if (Double.compare(this.verticalGap, that.verticalGap) != 0) {
             return false;
         }
         return true;

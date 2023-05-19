@@ -1625,7 +1625,7 @@ public class JFreeChart implements Drawable,
         if (this.backgroundImageAlignment != that.backgroundImageAlignment) {
             return false;
         }
-        if (this.backgroundImageAlpha != that.backgroundImageAlpha) {
+        if (Double.compare(this.backgroundImageAlpha, that.backgroundImageAlpha) != 0) {
             return false;
         }
         if (this.notify != that.notify) {

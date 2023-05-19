@@ -250,13 +250,13 @@ public class CategoryLabelPosition implements Serializable {
         if (!this.rotationAnchor.equals(that.rotationAnchor)) {
             return false;
         }
-        if (this.angle != that.angle) {
+        if (Double.compare(this.angle, that.angle) != 0) {
             return false;
         }
         if (this.widthType != that.widthType) {
             return false;
         }
-        if (this.widthRatio != that.widthRatio) {
+        if (Double.compare(this.widthRatio, that.widthRatio) != 0) {
             return false;
         }
         return true;

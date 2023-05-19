@@ -602,10 +602,10 @@ public class DialValueIndicator extends AbstractDialLayer implements DialLayer,
         if (this.datasetIndex != that.datasetIndex) {
             return false;
         }
-        if (this.angle != that.angle) {
+        if (Double.compare(this.angle, that.angle) != 0) {
             return false;
         }
-        if (this.radius != that.radius) {
+        if (Double.compare(this.radius, that.radius) != 0) {
             return false;
         }
         if (!this.frameAnchor.equals(that.frameAnchor)) {

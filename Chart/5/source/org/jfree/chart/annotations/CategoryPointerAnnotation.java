@@ -432,19 +432,19 @@ public class CategoryPointerAnnotation extends CategoryTextAnnotation
             return false;
         }
         CategoryPointerAnnotation that = (CategoryPointerAnnotation) obj;
-        if (this.angle != that.angle) {
+        if (Double.compare(this.angle, that.angle) != 0) {
             return false;
         }
-        if (this.tipRadius != that.tipRadius) {
+        if (Double.compare(this.tipRadius, that.tipRadius) != 0) {
             return false;
         }
-        if (this.baseRadius != that.baseRadius) {
+        if (Double.compare(this.baseRadius, that.baseRadius) != 0) {
             return false;
         }
-        if (this.arrowLength != that.arrowLength) {
+        if (Double.compare(this.arrowLength, that.arrowLength) != 0) {
             return false;
         }
-        if (this.arrowWidth != that.arrowWidth) {
+        if (Double.compare(this.arrowWidth, that.arrowWidth) != 0) {
             return false;
         }
         if (!this.arrowPaint.equals(that.arrowPaint)) {
@@ -453,7 +453,7 @@ public class CategoryPointerAnnotation extends CategoryTextAnnotation
         if (!ObjectUtilities.equal(this.arrowStroke, that.arrowStroke)) {
             return false;
         }
-        if (this.labelOffset != that.labelOffset) {
+        if (Double.compare(this.labelOffset, that.labelOffset) != 0) {
             return false;
         }
         return true;

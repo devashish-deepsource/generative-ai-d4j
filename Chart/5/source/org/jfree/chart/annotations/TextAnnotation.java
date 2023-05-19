@@ -302,7 +302,7 @@ public class TextAnnotation implements Serializable {
                 that.getRotationAnchor())) {
             return false;
         }
-        if (this.rotationAngle != that.getRotationAngle()) {
+        if (Double.compare(this.rotationAngle, that.getRotationAngle()) != 0) {
             return false;
         }
 

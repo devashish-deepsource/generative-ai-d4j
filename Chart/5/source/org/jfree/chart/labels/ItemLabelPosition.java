@@ -187,7 +187,7 @@ public class ItemLabelPosition implements Serializable {
         if (!this.rotationAnchor.equals(that.rotationAnchor)) {
             return false;
         }
-        if (this.angle != that.angle) {
+        if (Double.compare(this.angle, that.angle) != 0) {
             return false;
         }
         return true;

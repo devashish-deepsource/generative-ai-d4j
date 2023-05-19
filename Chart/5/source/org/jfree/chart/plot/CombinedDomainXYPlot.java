@@ -675,7 +675,7 @@ public class CombinedDomainXYPlot extends XYPlot
             return false;
         }
         CombinedDomainXYPlot that = (CombinedDomainXYPlot) obj;
-        if (this.gap != that.gap) {
+        if (Double.compare(this.gap, that.gap) != 0) {
             return false;
         }
         if (!ObjectUtilities.equal(this.subplots, that.subplots)) {

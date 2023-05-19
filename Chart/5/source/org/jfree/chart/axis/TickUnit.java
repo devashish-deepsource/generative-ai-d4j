@@ -143,10 +143,10 @@ public abstract class TickUnit implements Comparable, Serializable {
 
         if (object instanceof TickUnit) {
             TickUnit other = (TickUnit) object;
-            if (this.size > other.getSize()) {
+            if (Double.compare(this.size, other.getSize()) > 0) {
                 return 1;
             }
-            else if (this.size < other.getSize()) {
+            else if (Double.compare(this.size, other.getSize()) < 0) {
                 return -1;
             }
             else {
@@ -174,7 +174,7 @@ public abstract class TickUnit implements Comparable, Serializable {
             return false;
         }
         TickUnit that = (TickUnit) obj;
-        if (this.size != that.size) {
+        if (Double.compare(this.size, that.size) != 0) {
             return false;
         }
         if (this.minorTickCount != that.minorTickCount) {

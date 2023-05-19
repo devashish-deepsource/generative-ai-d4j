@@ -338,10 +338,10 @@ public class DialTextAnnotation extends AbstractDialLayer implements DialLayer,
         if (!PaintUtilities.equal(this.paint, that.paint)) {
             return false;
         }
-        if (this.radius != that.radius) {
+        if (Double.compare(this.radius, that.radius) != 0) {
             return false;
         }
-        if (this.angle != that.angle) {
+        if (Double.compare(this.angle, that.angle) != 0) {
             return false;
         }
         if (!this.anchor.equals(that.anchor)) {

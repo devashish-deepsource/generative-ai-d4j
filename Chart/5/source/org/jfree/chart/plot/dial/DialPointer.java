@@ -175,7 +175,7 @@ public abstract class DialPointer extends AbstractDialLayer
         if (this.datasetIndex != that.datasetIndex) {
             return false;
         }
-        if (this.radius != that.radius) {
+        if (Double.compare(this.radius, that.radius) != 0) {
             return false;
         }
         return super.equals(obj);
@@ -594,7 +594,7 @@ public abstract class DialPointer extends AbstractDialLayer
             }
             DialPointer.Pointer that = (DialPointer.Pointer) obj;
 
-            if (this.widthRadius != that.widthRadius) {
+            if (Double.compare(this.widthRadius, that.widthRadius) != 0) {
                 return false;
             }
             if (!PaintUtilities.equal(this.fillPaint, that.fillPaint)) {

@@ -1187,10 +1187,10 @@ public class CyclicNumberAxis extends NumberAxis {
             return false;
         }
         CyclicNumberAxis that = (CyclicNumberAxis) obj;
-        if (this.period != that.period) {
+        if (Double.compare(this.period, that.period) != 0) {
             return false;
         }
-        if (this.offset != that.offset) {
+        if (Double.compare(this.offset, that.offset) != 0) {
             return false;
         }
         if (!PaintUtilities.equal(this.advanceLinePaint,

@@ -1204,17 +1204,16 @@ public class CategoryAxis extends Axis implements Cloneable, Serializable {
             return false;
         }
         CategoryAxis that = (CategoryAxis) obj;
-        if (that.lowerMargin != this.lowerMargin) {
+        if (Double.compare(that.lowerMargin, this.lowerMargin) != 0) {
             return false;
         }
-        if (that.upperMargin != this.upperMargin) {
+        if (Double.compare(that.upperMargin, this.upperMargin) != 0) {
             return false;
         }
-        if (that.categoryMargin != this.categoryMargin) {
+        if (Double.compare(that.categoryMargin, this.categoryMargin) != 0) {
             return false;
         }
-        if (that.maximumCategoryLabelWidthRatio
-                != this.maximumCategoryLabelWidthRatio) {
+        if (Double.compare(that.maximumCategoryLabelWidthRatio, this.maximumCategoryLabelWidthRatio) != 0) {
             return false;
         }
         if (that.categoryLabelPositionOffset

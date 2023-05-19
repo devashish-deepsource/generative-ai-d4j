@@ -4358,13 +4358,13 @@ public class CategoryPlot extends Plot implements ValueAxisPlot,
                 that.rangeGridlinePaint)) {
             return false;
         }
-        if (this.anchorValue != that.anchorValue) {
+        if (Double.compare(this.anchorValue, that.anchorValue) != 0) {
             return false;
         }
         if (this.rangeCrosshairVisible != that.rangeCrosshairVisible) {
             return false;
         }
-        if (this.rangeCrosshairValue != that.rangeCrosshairValue) {
+        if (Double.compare(this.rangeCrosshairValue, that.rangeCrosshairValue) != 0) {
             return false;
         }
         if (!ObjectUtilities.equal(this.rangeCrosshairStroke,

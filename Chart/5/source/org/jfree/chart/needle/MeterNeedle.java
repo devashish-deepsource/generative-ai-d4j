@@ -376,10 +376,10 @@ public abstract class MeterNeedle implements Serializable {
         if (this.size != that.size) {
             return false;
         }
-        if (this.rotateX != that.rotateX) {
+        if (Double.compare(this.rotateX, that.rotateX) != 0) {
             return false;
         }
-        if (this.rotateY != that.rotateY) {
+        if (Double.compare(this.rotateY, that.rotateY) != 0) {
             return false;
         }
         return true;

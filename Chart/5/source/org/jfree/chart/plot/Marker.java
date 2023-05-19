@@ -605,7 +605,7 @@ public abstract class Marker implements Cloneable, Serializable {
         if (!ObjectUtilities.equal(this.outlineStroke, that.outlineStroke)) {
             return false;
         }
-        if (this.alpha != that.alpha) {
+        if (Double.compare(this.alpha, that.alpha) != 0) {
             return false;
         }
         if (!ObjectUtilities.equal(this.label, that.label)) {

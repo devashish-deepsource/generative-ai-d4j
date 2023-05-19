@@ -268,7 +268,7 @@ public class DialCap extends AbstractDialLayer implements DialLayer, Cloneable,
             return false;
         }
         DialCap that = (DialCap) obj;
-        if (this.radius != that.radius) {
+        if (Double.compare(this.radius, that.radius) != 0) {
             return false;
         }
         if (!PaintUtilities.equal(this.fillPaint, that.fillPaint)) {

@@ -1619,19 +1619,19 @@ public abstract class ValueAxis extends Axis
         if (this.autoRange != that.autoRange) {
             return false;
         }
-        if (this.autoRangeMinimumSize != that.autoRangeMinimumSize) {
+        if (Double.compare(this.autoRangeMinimumSize, that.autoRangeMinimumSize) != 0) {
             return false;
         }
         if (!this.defaultAutoRange.equals(that.defaultAutoRange)) {
             return false;
         }
-        if (this.upperMargin != that.upperMargin) {
+        if (Double.compare(this.upperMargin, that.upperMargin) != 0) {
             return false;
         }
-        if (this.lowerMargin != that.lowerMargin) {
+        if (Double.compare(this.lowerMargin, that.lowerMargin) != 0) {
             return false;
         }
-        if (this.fixedAutoRange != that.fixedAutoRange) {
+        if (Double.compare(this.fixedAutoRange, that.fixedAutoRange) != 0) {
             return false;
         }
         if (this.autoTickUnitSelection != that.autoTickUnitSelection) {

@@ -844,10 +844,10 @@ public class LogAxis extends ValueAxis {
             return false;
         }
         LogAxis that = (LogAxis) obj;
-        if (this.base != that.base) {
+        if (Double.compare(this.base, that.base) != 0) {
             return false;
         }
-        if (this.smallestValue != that.smallestValue) {
+        if (Double.compare(this.smallestValue, that.smallestValue) != 0) {
             return false;
         }
         return super.equals(obj);

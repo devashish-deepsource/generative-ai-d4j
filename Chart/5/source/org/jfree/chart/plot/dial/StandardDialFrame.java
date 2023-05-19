@@ -289,7 +289,7 @@ public class StandardDialFrame extends AbstractDialLayer implements DialFrame,
         if (!PaintUtilities.equal(this.foregroundPaint, that.foregroundPaint)) {
             return false;
         }
-        if (this.radius != that.radius) {
+        if (Double.compare(this.radius, that.radius) != 0) {
             return false;
         }
         if (!this.stroke.equals(that.stroke)) {

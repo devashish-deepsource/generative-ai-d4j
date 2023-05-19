@@ -349,13 +349,13 @@ public class CategoryLineAnnotation implements CategoryAnnotation,
         if (!this.category1.equals(that.getCategory1())) {
             return false;
         }
-        if (this.value1 != that.getValue1()) {
+        if (Double.compare(this.value1, that.getValue1()) != 0) {
             return false;
         }
         if (!this.category2.equals(that.getCategory2())) {
             return false;
         }
-        if (this.value2 != that.getValue2()) {
+        if (Double.compare(this.value2, that.getValue2()) != 0) {
             return false;
         }
         if (!PaintUtilities.equal(this.paint, that.paint)) {
